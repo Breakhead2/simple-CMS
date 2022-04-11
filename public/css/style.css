@@ -1,0 +1,558 @@
+body .welcome{
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12%;
+    align-items: center;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+ nav .сart_btn{
+     padding: 15px;
+     border: 1px solid cornflowerblue;
+     color: blue;
+     transition: all .2s linear;
+ }
+nav .сart_btn:hover{
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+}
+nav a:last-of-type {
+    margin-right: 0px;
+}
+
+/* section products */
+
+section{
+    padding: 0 12%;
+}
+section h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: cornflowerblue;
+}
+
+.products .box{
+    justify-content: center;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(auto, 300px));
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.products .box .item {
+    padding: 15px;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    place-content: center;
+}
+.back {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.products .box .item .info{
+    padding-top: 5px;
+    text-align: center;
+}
+.products .box .item .info .author{
+    color: darkgray;
+}
+.products .box .item .info .price{
+    color: dimgrey;
+}
+.products .box .item .info .author span{
+    color: darkslategrey;
+}
+.btn_add{
+    cursor: pointer;
+    justify-self: center;
+    padding: 5px 10px;
+}
+.book h3{
+    text-transform: uppercase;
+    color: cornflowerblue;
+    padding-left: 20px;
+}
+.book .container{
+    display: flex;
+    gap: 40px;
+}
+p{
+    font-style: italic;
+}
+p span {
+    font-style: normal;
+}
+.description{
+    padding-top: 6px;
+}
+
+/* section reviews */
+
+.reviews{
+    margin-top: 50px;
+    padding: 0 16%;
+}
+.reviews .greeting{
+    font-style: italic;
+    margin-bottom: 50px;
+}
+.messages {
+    width: 100% ;
+    margin: 25px 0 60px;
+}
+.messages .text{
+    border: 1px solid gray;
+    padding: 0 16px;
+    background-color: aqua;
+}
+.messages .tools{
+    margin: 5px 0 5px;
+}
+.messages .author{
+    font-style: normal;
+    font-weight: bolder;
+}
+#review_form{
+    margin: 30px 0 30px;
+
+}
+#review_form .user_name{
+    padding: 4px 12px;
+    margin-bottom: 5px;
+}
+#review_form .user_text{
+    box-sizing: border-box;
+    padding: 4px 12px;
+    width: 100%;
+    min-height: 50px ;
+}
+.send_mes{
+    margin-top: 10px;
+    padding: 5px 15px;
+    justify-self: end;
+}
+
+/* section authentication */
+.authentication{
+margin: 50px 0;
+    display: grid;
+}
+.authentication .logout{
+    display: inline-block;
+    padding: 8px 24px;
+    border: blue;
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    justify-self: center;
+}
+.authForm{
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    padding: 15px;
+    border: 1px solid blue;
+}
+.error{
+    color: red;
+    font-weight: bold;
+}
+.authForm h4{
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+}
+.authForm label{
+    display: flex;
+
+    align-items: center;
+}
+.authForm label input{
+    margin-left: 8px;
+    padding: 5px;
+    width: 100%;
+}
+.authForm .check input{
+    width: auto;
+}
+.authForm .sub{
+    justify-self: center;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+.authForm .login input{
+    margin-left: 15px;
+}
+
+/* section cart */
+
+.cart .sum {
+    text-transform: uppercase;
+    margin-left: 70px;
+}
+.cart .sum span {
+    font-weight: bolder;
+    font-style: italic;
+}
+.cart .box{
+    justify-content: center;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(auto, 300px));
+    gap: 30px;
+}
+.cart .box p {
+    text-align:center;
+}
+.cart form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.cart form .image_container{
+    width: 200px;
+
+}
+.cart form .information{
+    width: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: start;
+}
+
+.cart form .image_container img{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: contain;
+}
+
+#checkout_form{
+    display: grid;
+}
+.btn_checkout{
+    justify-self: center;
+    padding: 8px 24px;
+    cursor: pointer;
+}body .welcome{
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12%;
+    align-items: center;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+ nav .сart_btn{
+     padding: 15px;
+     border: 1px solid cornflowerblue;
+     color: blue;
+     transition: all .2s linear;
+ }
+nav .сart_btn:hover{
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+}
+nav a:last-of-type {
+    margin-right: 0px;
+}
+
+/* section products */
+
+section{
+    padding: 0 12%;
+}
+.products .box{
+    justify-content: center;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(auto, 300px));
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.products .box .item {
+    padding: 15px;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    place-content: center;
+}
+.back {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.products .box .item .info{
+    padding-top: 5px;
+    text-align: center;
+}
+.products .box .item .info .author{
+    color: darkgray;
+}
+.products .box .item .info .price{
+    color: dimgrey;
+}
+.products .box .item .info .author span{
+    color: darkslategrey;
+}
+.btn_add{
+    cursor: pointer;
+    justify-self: center;
+    padding: 5px 10px;
+}
+.book h3{
+    text-transform: uppercase;
+    color: cornflowerblue;
+    padding-left: 20px;
+}
+.book .container{
+    display: flex;
+    gap: 40px;
+}
+p{
+    font-style: italic;
+}
+p span {
+    font-style: normal;
+}
+.description{
+    padding-top: 6px;
+}
+
+/* section reviews */
+
+.reviews{
+    margin-top: 50px;
+    padding: 0 16%;
+}
+.reviews .greeting{
+    font-style: italic;
+    margin-bottom: 50px;
+}
+.messages {
+    width: 100% ;
+    margin: 25px 0 60px;
+}
+.messages .text{
+    border: 1px solid gray;
+    padding: 0 16px;
+    background-color: aqua;
+}
+.messages .tools{
+    margin: 5px 0 5px;
+}
+.messages .author{
+    font-style: normal;
+    font-weight: bolder;
+}
+#review_form{
+    margin: 30px 0 30px;
+
+}
+#review_form .user_name{
+    padding: 4px 12px;
+    margin-bottom: 5px;
+}
+#review_form .user_text{
+    box-sizing: border-box;
+    padding: 4px 12px;
+    width: 100%;
+    min-height: 50px ;
+}
+.send_mes{
+    margin-top: 10px;
+    padding: 5px 15px;
+    justify-self: end;
+}
+
+/* section authentication */
+.authentication{
+margin: 50px 0;
+    display: grid;
+}
+.authentication .logout{
+    display: inline-block;
+    padding: 8px 24px;
+    border: blue;
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    justify-self: center;
+}
+.authForm{
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    padding: 15px;
+    border: 1px solid blue;
+}
+.authForm .error{
+    color: red;
+    font-weight: bold;
+}
+.authForm h4{
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+}
+.authForm label{
+    display: flex;
+
+    align-items: center;
+}
+.authForm label input{
+    margin-left: 8px;
+    padding: 5px;
+    width: 100%;
+}
+.authForm .check input{
+    width: auto;
+}
+.authForm .sub{
+    justify-self: center;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+.authForm .login input{
+    margin-left: 15px;
+}
+
+/* section cart */
+
+.cart .sum span {
+    font-weight: bolder;
+    font-style: italic;
+}
+.cart .box{
+    justify-content: center;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(auto, 300px));
+    gap: 30px;
+}
+.cart .box p {
+    text-align:center;
+}
+.cart form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.cart form .image_container{
+    width: 200px;
+
+}
+.cart form .information{
+    width: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: start;
+}
+
+.cart form .image_container img{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: contain;
+}
+
+.order{
+    margin-left: 70px;
+}
+
+#checkout_form{
+    display: grid;
+}
+.btn_checkout{
+    justify-self: center;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+.status{
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    border: blue;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+.status .success{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* section orders */
+.orders_list .table{
+    display: grid;
+    grid-template-rows: auto;
+    min-width: 950px;
+    row-gap: 10px;
+    font-size: 14px;
+    border: 1px solid blue;
+}
+.orders_list .table .row {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(95px, 1fr));
+    justify-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid blue;
+    height: 100%;
+}
+.orders_list .table .row:last-child{
+    border-bottom: none;
+}
+.row.header{
+    background-color: cornflowerblue;
+}
+.row .cart_link{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid blue;
+    font-style: italic;
+}
+.orders_list .table .row .heading {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid blue;
+    font-style: italic;
+    font-weight: bold;
+}
+.orders_list .table .row .cell {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid blue;
+    font-style: italic;
+}
+.orders_list .table .row .heading:last-child{
+    border-right: none;
+}
+.orders_list .table .row .cell:last-child {
+    border-right: none;
+}
